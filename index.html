@@ -1,16 +1,297 @@
-## Hi there 👋
+https://formspree.io/f/xldnqrgo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>BM Clean Co.</title>
+  <meta name="description" content="Professional cleaning services for homes and offices in the Lehigh Valley. Get a sparkling clean space with BM Clean Co.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #162447; /* Dark Blue */
+      --secondary: #f7ead0; /* Tan background */
+      --accent: #1f4068; /* Slightly lighter dark blue for accents */
+      --text: #17202a;
+      --border-radius: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: var(--secondary);
+      color: var(--text);
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem 2rem 1rem;
+      background: #fff;
+      border-radius: var(--border-radius);
+      margin: 2rem auto;
+      max-width: 1200px;
+      box-shadow: 0 4px 24px rgba(22,36,71,0.08);
+    }
+    .hero-content {
+      flex: 1 1 300px;
+      min-width: 260px;
+      padding: 1rem;
+    }
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      color: var(--primary);
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem 0;
+    }
+    .cta-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: var(--border-radius);
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(31,64,104,0.10);
+    }
+    .cta-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+    .hero-img {
+      flex: 1 1 200px;
+      min-width: 200px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .hero-img img {
+      max-width: 250px;
+      width: 100%;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 12px rgba(31,64,104,0.12);
+    }
+    .services {
+      max-width: 1000px;
+      margin: 2rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 12px rgba(22,36,71,0.07);
+      flex: 1 1 220px;
+      min-width: 220px;
+      max-width: 300px;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .service-card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 6px 24px rgba(22,36,71,0.13);
+    }
+    .service-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+    .service-card p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    .service-card img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      box-shadow: 0 2px 10px rgba(31,64,104,0.10);
+      background: #e4e7ed;
+    }
+    .about {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(22,36,71,0.07);
+    }
+    .about h2 {
+      color: var(--primary);
+    }
+    .contact {
+      max-width: 600px;
+      margin: 2rem auto 1rem auto;
+      background: #fff;
+      border-radius: var(--border-radius);
+      padding: 2rem;
+      box-shadow: 0 2px 12px rgba(22,36,71,0.07);
+      text-align: center;
+    }
+    .contact h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 0.7rem;
+      border: 1px solid #c3b89f;
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      font-family: inherit;
+      background: #f7ead0;
+    }
+    .contact-form textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+    .footer {
+      text-align: center;
+      padding: 1.5rem 0 0.7rem 0;
+      color: #888;
+      font-size: 0.95rem;
+    }
+    .contact-links {
+      margin-top: 1.5rem;
+      color: #888;
+      font-size: 1.05rem;
+    }
+    .contact-links a {
+      color: var(--accent);
+      text-decoration: underline;
+      margin: 0 0.5em;
+      transition: color 0.2s;
+    }
+    .contact-links a:hover {
+      color: var(--primary);
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+      }
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .hero-content h2 { font-size: 1.3rem; }
+      .about, .contact { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BM Clean Co.</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!--
-**BMCleanCo/bmcleanco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Making Homes & Offices Sparkle in the Lehigh Valley</h2>
+      <p>BM Clean Co. provides reliable, eco-friendly cleaning services for residential and commercial spaces in the Lehigh Valley. Trusted, insured, and satisfaction guaranteed.</p>
+      <a href="#contact" class="cta-btn">Get a Free Quote</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Clean living room couch">
+    </div>
+  </section>
 
-Here are some ideas to get you started:
+  <section id="services" class="services">
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" alt="Front of a beautiful home">
+      <h3>Home Cleaning</h3>
+      <p>Deep cleaning, regular upkeep, move-in/move-out, kitchens, bathrooms, and more.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Office workspace with desk and chair">
+      <h3>Office Cleaning</h3>
+      <p>Workplace cleaning, sanitization, desks, electronics, break rooms, restrooms.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Green healthy plant">
+      <h3>Green Cleaning</h3>
+      <p>Non-toxic, eco-friendly products for a healthy environment and peace of mind.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=400&q=80" alt="Custom cleaning service supplies">
+      <h3>Custom Services</h3>
+      <p>Post-renovation, event cleanups, and tailored solutions to suit your needs.</p>
+    </div>
+  </section>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      BM Clean Co. is proud to serve the Lehigh Valley community with honest, reliable, and top-quality cleaning services. We believe everyone deserves a spotless space to live and work in, and our mission is to make that a reality for our clients. Our team is fully trained, background-checked, and insured, ensuring your peace of mind with every visit.<br><br>
+      We specialize in both residential and commercial cleaning, using safe and sustainable products for the health of your family, staff, and the environment. Whether you need a one-time deep clean, routine maintenance, or a custom solution, we’re here to help. Our reputation is built on trust, attention to detail, and a commitment to exceeding your expectations. Let us show you why so many in the Lehigh Valley choose BM Clean Co. for their cleaning needs!
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form" autocomplete="off" action="https://formspree.io/f/xldnqrgo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="How can we help you?" required></textarea>
+      <button class="cta-btn" type="submit">Send Message</button>
+      <input type="hidden" name="_subject" value="BM Clean Co. Website Contact">
+    </form>
+    <div class="contact-links">
+      Or call us at <strong>(256) 614-3683</strong>
+    </div>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 BM Clean Co. | All rights reserved.
+  </div>
+</body>
+</html>
